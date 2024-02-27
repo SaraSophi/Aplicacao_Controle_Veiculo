@@ -1,7 +1,12 @@
 
 import re
+from datetime import datetime
+from Operacao import Operacao
+
+
 
 #Tela 1 -  Cadastro Veículo
+
 class TipoVeic:
     def __init__(self, cod, descricao, categoria):
         self.cod        = cod    
@@ -67,8 +72,7 @@ else:
     print("Erro ao adicionar valores à lista- Classificações")
 
 class Veiculo:
-    def __init__(self, placa, anoVeic,renavam, chassi, tipoVeic, classificacao, modelo, operacao,combustivel, dtAquisicao):
-        #self.frota = frota
+    def __init__(self, placa, anoVeic,renavam, chassi, tipoVeic, classificacao, modelo, operacao, combustivel, dtAquisicao, cor, tracao, qtEixo, frota):
         self.placa          = placa
         self.anoVeic        = anoVeic
         self.renavam        = renavam
@@ -78,19 +82,11 @@ class Veiculo:
         self.modelo         = modelo
         self.operacao       = operacao
         self.combustivel    = combustivel
-        self.dtAquisicao   = dtAquisicao
-
-
-        '''
-            def __init__(self, frota, modelo , marca, dtAquisicao, operacao, cor, tracao, qtEixo, classificacao, categoria):
-        self.marca = marca
-        self.dtAquisicao = dtAquisicao
-        self.operacao = operacao
-        self.cor = cor
-        self.tracao = tracao
-        self.qtEixo = qtEixo
-        self.classificacao = classificacao
-        '''
+        self.dtAquisicao    = dtAquisicao
+        self.cor            = cor
+        self.tracao         = tracao
+        self.qtEixo         = qtEixo
+        self.frota          = frota
 
     #Validar tamanho caracters/ ordem/ formato
     def validaPlaca(self): 
@@ -129,27 +125,71 @@ class Veiculo:
             return True
         else:
             return False
-        
+
     def validaData(self):
+        separadores = ['-', '/']
+        for separador in separadores:
+            if separador in self.dtAquisicao:
+                try:
+                    datetime.strptime(self.dtAquisicao, f'%d{separador}%m{separador}%Y')
+                    return True
+                except ValueError:
+                    pass
+        # Se nenhum separador for encontrado na string, tenta inserir "/"
+        try:
+            self.dtAquisicao = f"{self.dtAquisicao[:2]}/{self.dtAquisicao[2:4]}/{self.dtAquisicao[4:]}"
+            datetime.strptime(self.dtAquisicao, '%d/%m/%Y')
+            #teste para ve se mudou mesmo - APAGAR
+            print(f"{self.dtAquisicao}")
+            return True
+        except ValueError:
+            return False
 
-    
-    #def validaCampos(self):
-    #Validação dos campos obrigatorios
 
+        #def validaCampos(self):
+        #Validação dos campos obrigatorios
 
-# Exemplo de uso
+    def validaQtdEixo(self):
+        try:
+            # Passa eixos para número inteiro
+            self.qtEixo = int(self.qtEixo)
+            # Verifica se a quantidade de eixos está dentro do intervalo aceitável (1 a 10, por exemplo)
+            if self.qtEixo == '':
+                print("A quantidade de eixo deve ser informada.")
+                return ValueError
+            else:   
 
-tipoVeic        = TipoVeic(1,'Truck', 'Pesado') 
+                if 1 <= self.qtEixo <= 10:
+                    return True
+                else:
+                    return False
+        except ValueError:
+                # Se não for possível converter para inteiro, retorna False
+                return False
+
+   # def validaFrota(self):
+    #    if self.tracao = 1  se for automotor incrementar
+
+# Valores
+''' 
+tipoVeic        = TipoVeic(1,'Truck','Pesado')
 classificacao   = Classificacao(1,'Caminhão') 
+clOperacao      = Operacao()
+#clOperacao.adicionarOperacao("KKJnhkjkjhglkjh")
+operacoes       = clOperacao.operacoes
 modelos         = ["FH500 - Volvo", "FH400 - Volvo"]
-operacoes       = ["1- Linha Fixa", "2- Linha 24hrs"]
 tpCombustivel   = ["1- Diesel S10", "2- Diesel S500"]
+cores           = ["Branco", "Preto", "Cinza"]
+tpTracao        = ["Automotor", "Reboque", "SemiReboque"]
+
 veiculos        = []
 for modelo in modelos:
     for operacao in operacoes:
         for combustivel in tpCombustivel:
-            veiculo = Veiculo('abj4h55', 1999, '1345502424', '1G1JC5418R7252367',tipoVeic, 1, modelo, operacao, combustivel, '20/12/2024')
-            veiculos.append(veiculo)
+            for cor in cores:
+                for tracao in tpTracao:
+                    veiculo = Veiculo('abj4h55', 2021, '1345502424', '1G1JC5418R7252367',tipoVeic, 1, modelo, operacao, combustivel, '20122024', cor, tracao, 1)
+                    veiculos.append(veiculo)
 
 for i, veiculo in enumerate(veiculos, start=1):
     print(f"Veículo {i}:")
@@ -157,12 +197,15 @@ for i, veiculo in enumerate(veiculos, start=1):
     print("Ano:", veiculo.anoVeic)
     print("Renavam:", veiculo.renavam)
     print("Chassi:", veiculo.chassi)
-    print("Tipo:", veiculo.tipoVeic)
+    print("Tipo:", veiculo.tipoVeic.cod,",", veiculo.tipoVeic.descricao,",", veiculo.tipoVeic.categoria)
     print("Classificação:", veiculo.classificacao)
     print("Modelo:", veiculo.modelo)
     print("Operação:", veiculo.operacao)
     print("Combustível:",veiculo.combustivel)
-    print("Combustível:",veiculo.dtAquisicao)
+    print("Data de Aquisição:",veiculo.dtAquisicao)
+    print("Cor Predominante:",veiculo.cor)
+    print("Tração:",veiculo.tracao)
+    print("Eixos:",veiculo.qtEixo)
     print()
 
 if veiculo.validaPlaca():
@@ -185,3 +228,15 @@ if veiculo.validaChassi():
 else:
     print("Chassi inválido")
 
+if veiculo.validaData():
+    print("Data válido")
+else:
+   print("Data inválido")
+
+if veiculo.validaQtdEixo():
+    print("Quantidade de eixos válida.")
+else:
+    print("Quantidade de eixos inválida.")
+'''
+tipoVeic        = TipoVeic([{1,'Truck','Pesado'}, {2, 'Bitruck', 'Leve'}])
+print(f"Tipo:", tipoVeic.cod,",", tipoVeic.descricao,",", tipoVeic.categoria)
