@@ -19,9 +19,9 @@ engine = create_engine(url = instance, echo=True, max_identifier_length=30)
 
 db_session = scoped_session(sessionmaker(autocommit=False, autoflush=True, bind=engine))
 
-response = db_session.execute(text('SELECT * FROM uf'))
-print(response)
-
+response = db_session.execute(text('SELECT * FROM teste'))
+for row in response:
+    print(row)
 
 
 
