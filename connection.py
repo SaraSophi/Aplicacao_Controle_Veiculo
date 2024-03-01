@@ -1,6 +1,6 @@
 from urllib.parse import quote
-from sqlalchemy import create_engine, text
-from sqlalchemy.orm import scoped_session, sessionmaker, declarative_base
+from sqlalchemy import create_engine, text, select
+from sqlalchemy.orm import scoped_session, sessionmaker
 import cx_Oracle
 
 lib_dir = "C:\oracle\instantclient_21_13"
@@ -12,13 +12,23 @@ HOST = 'localhost'
 PORT = 1521
 SID = "xe"
 
-sid = cx_Oracle.makedns(HOST, PORT, sid=SID)
+sid = cx_Oracle.makedsn(HOST, PORT, sid=SID)
 instance = f"oracle+cx_oracle://{USER}:{PASSWD}@{sid}"
 
-engine = create_engine(instance, echo=True, max_identifier_length=30)
+engine = create_engine(url = instance, echo=True, max_identifier_length=30)
 
-bd_session = scoped_session(sessionmaker(autocommit=False, autoFlush=False, bind=engine))
+db_session = scoped_session(sessionmaker(autocommit=False, autoflush=True, bind=engine))
 
-from sqlalchemy.orm import DeclarativeBase, mapped_column
-from sqlalchemy import Interger, VARCHAR, DATE, NUMERIC ForeignKey
-import datetime
+response = db_session.execute(text('SELECT * FROM uf'))
+print(response)
+
+
+
+
+
+
+# As seguintes linhas não são usadas no código e estão comentadas
+# from sqlalchemy.orm import DeclarativeMeta, Mapped
+# from sqlalchemy import Integer, VARCHAR, DATE, NUMERIC, ForeignKey
+# import datetime
+# from sqlalchemy.schema import Sequence
