@@ -2,10 +2,10 @@ from urllib.parse import quote
 from sqlalchemy import create_engine, text, select
 from sqlalchemy.orm import scoped_session, sessionmaker
 import cx_Oracle
-conn = cx_Oracle.connect('system/ksl1708@localhost')
+# conn = cx_Oracle.connect('system/ksl1708@localhost')
 
 lib_dir = "C:\oracle\instantclient_21_13"
-# cx_Oracle.init_oracle_client(lib_dir=lib_dir)
+cx_Oracle.init_oracle_client(lib_dir=lib_dir)
 
 USER = 'system'
 PASSWD = quote('ksl1708')
@@ -18,26 +18,26 @@ instance = f"oracle+cx_oracle://{USER}:{PASSWD}@{sid}"
 
 engine = create_engine(url = instance, echo=True, max_identifier_length=30)
 
-db_session = scoped_session(sessionmaker(autocommit=False, autoflush=False, bind=engine))
+db_session = scoped_session(sessionmaker(bind=engine, autoflush=True, autocommit=False))
 
 # Definir a consulta SQL
 sql = "SELECT * FROM uf"
 
 # Executar a consulta
-cursor = conn.cursor()
-cursor.execute(sql)
+# cursor = conn.cursor()
+# cursor.execute(sql)
 
 # Iterar sobre os resultados e imprimir no console
-for row in cursor:
-    print(row)
+''' for row in cursor:
+    print(row) '''
 
 # Fechar o cursor e a conexão
-cursor.close()
-conn.close()
+# cursor.close()
+# conn.close()
 
-# response = db_session.execute(text('SELECT * FROM teste'))
-# for row in response:
-#    print(row)
+response = db_session.execute(text('SELECT * FROM teste'))
+for row in response:
+   print(row)
 
 
 
