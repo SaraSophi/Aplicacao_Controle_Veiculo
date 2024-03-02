@@ -39,7 +39,6 @@ for row in response:
 # from sqlalchemy.schema import Sequence
 '''
 
-
 from urllib.parse import quote
 from sqlalchemy import create_engine, text, update
 from sqlalchemy.orm import scoped_session, sessionmaker
