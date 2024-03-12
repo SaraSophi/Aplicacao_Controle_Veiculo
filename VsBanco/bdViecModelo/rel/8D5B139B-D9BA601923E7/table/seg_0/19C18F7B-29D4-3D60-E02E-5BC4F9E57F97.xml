@@ -26,8 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200 CHAR</dataTypeSize>
-<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="nrCasa" id="CE8BB47E-E562-7667-6A45-EBC1C94B17FC">

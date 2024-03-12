@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ADA4A6C9-B188-1BCE-6928-793A5C2F85BF" name="ENDEREC0">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:51:46 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idEndereco" id="E5B91ADE-6F00-D8A2-DBDC-A7437D265AA4">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:51:56 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dsLogradouro" id="499C000C-A489-0A72-F9A7-7E3B64E6CEA5">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:52:15 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrCaso" id="B576A02C-549E-3191-AED2-5530419AABD9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:52:35 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nmBairro" id="E3B6F9DA-5457-0AE1-1566-BED70CDA683D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:52:44 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrCep" id="61C6DA28-C746-0181-C69D-90D4F3AF5CC2">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:53:01 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="53A57970-7885-B018-46E4-6DD9B5070944" name="ENDEREC0 PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:52:13 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5B91ADE-6F00-D8A2-DBDC-A7437D265AA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

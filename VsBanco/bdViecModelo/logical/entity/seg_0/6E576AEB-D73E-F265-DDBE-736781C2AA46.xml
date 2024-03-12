@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E576AEB-D73E-F265-DDBE-736781C2AA46" name="FUNCIONARIO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:55:11 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nrMatricula" id="937AAD4B-AD1D-024F-5A4A-92E2B60E5114">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:55:23 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nmFuncionario" id="3FA94F65-825F-CA37-95F8-01DAC8A99A7E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:55:36 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2F4D1E7F-C1F7-ACB8-2A8C-ACE29FFADBD5" name="FUNCIONARIO PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 13:55:34 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>937AAD4B-AD1D-024F-5A4A-92E2B60E5114</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
