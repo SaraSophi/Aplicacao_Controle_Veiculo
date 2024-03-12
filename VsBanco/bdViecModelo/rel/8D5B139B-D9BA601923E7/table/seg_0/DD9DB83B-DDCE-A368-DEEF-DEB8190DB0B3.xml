@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD9DB83B-DDCE-A368-DEEF-DEB8190DB0B3" name="MOTORISTA">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:04:02 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idMotorista" id="13C5AF49-240F-174B-5339-B525E43D8E65">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:04:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmMotorista" id="5CC94E48-66E1-EE34-9011-1D3D2DAA9AE8">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:04:42 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUNCIONARIO_nrMatricula" id="92CFFB91-7384-8CB3-8961-15D81F7C291E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:41 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFCDD487-CA5D-537C-473F-851C867EB823" referredColumn="63587E9B-F269-757F-A6BE-8CE56AB4B620"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="794DA590-F650-C193-2E28-7105F0182C5A" name="MOTORISTA_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:04:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13C5AF49-240F-174B-5339-B525E43D8E65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0085AADC-879D-3EBA-7AE7-C7CEC04AFD24" name="MOTORISTA_FUNCIONARIO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:41 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92CFFB91-7384-8CB3-8961-15D81F7C291E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
