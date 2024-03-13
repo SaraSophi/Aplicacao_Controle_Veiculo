@@ -1,0 +1,241 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C7920A4-DF4A-FD7B-F96C-7FD02BC4A11B" name="VEICULO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:06:02 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idVeiculo" id="42B5FBF2-9F2F-9151-918E-43590C1E678C">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:06:35 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrPlaca" id="042F4F64-AB60-808D-6832-C97320230061">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:07:02 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dsModelo" id="0C88B2D4-94FF-B7D5-CE74-24727477C4F0">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:07:19 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpTracao" id="F0E0AC8A-03B6-53BB-6641-5B5CB4FC68BE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:08:06 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrRenavam" id="AF337046-A314-9BC9-8E56-5BC794AC12FC">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:09:45 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtAquisicao" id="5B252A39-F3C7-AEF7-BA2C-536EA8072847">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:11:06 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrFrota" id="D51A18DF-5F59-8D27-1D9F-52652FE5544D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:11:36 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrConjunto" id="113A087D-5ACD-3C42-1FD6-C24CAF335D7E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:11:57 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrChassi" id="88F8C7AF-E00D-EF5F-6C22-CE1081E5F190">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:12:21 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpCombustivel" id="F75B4020-1678-6129-63CA-C84DD1767D93">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:12:57 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anoVeic" id="081CDDD8-B477-1674-255B-78B30C6F3DB7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:13:29 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dsMarca" id="A3C8D695-16FB-8691-1FAA-49A1E21EA2EB">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:14:18 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qtEixo" id="9E64426A-4E93-832D-F888-AA135F79A74D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:15:13 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TPVEICULO_idTpVeiculo" id="87896BEC-9837-A061-FFB4-CD88DE379E72">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:15 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C6E4430-786B-B616-A18D-AE2CCC3FB049" referredColumn="28196105-8C73-BA3C-8D50-3C291527E569"/>
+</associations>
+</Column>
+<Column name="CLASSIFICACAO_idClassificacao" id="7C19240B-04F9-4CAF-8929-AE439EDADF86">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:20 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AA6FA314-1E87-CDC1-8D3D-BE4C4616FB73" referredColumn="270A8D80-06C3-0B4B-EA04-8C3577FD293B"/>
+</associations>
+</Column>
+<Column name="VEICULO_idVeiculo" id="2C3E6806-D6BB-E12B-FAF7-7274BC962857">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:40:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F87749FE-E8F4-3611-B8D3-4A117E144DE7" referredColumn="42B5FBF2-9F2F-9151-918E-43590C1E678C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="617C2709-8B74-8E2B-E1BC-04EFAC17805A" name="VEICULO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:06:35 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42B5FBF2-9F2F-9151-918E-43590C1E678C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9AC7068F-C265-96C2-BCAB-D6CC5B95F412" name="VEICULO_TPVEICULO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:15 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87896BEC-9837-A061-FFB4-CD88DE379E72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDD5569C-4AA9-4378-373B-CE4D03B6A52A" name="VEICULO_CLASSIFICACAO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:20 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C19240B-04F9-4CAF-8929-AE439EDADF86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CF13180-6B2F-54BD-C16C-1356D73C8FA3" name="VEICULO_VEICULO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:40:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C3E6806-D6BB-E12B-FAF7-7274BC962857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

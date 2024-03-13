@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="77651C13-23AD-3B20-B85A-8048B7AAF414" name="CTENGATE">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:15:36 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="61484F6D-2F8F-849B-A982-B1256F33E416">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:16:35 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtEngate" id="1B789D58-51F2-C93D-C9CA-9BEF9DA75A62">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:16:49 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dtDesengate" id="9C20E53B-486E-A619-C270-74E3D11BA70D">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:17:30 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VEICULO_idVeiculo" id="86F57B12-FFCE-8616-8AC7-7F061CB1EF9E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B0C3588-1454-F367-721D-B1540EDCCB4A" referredColumn="42B5FBF2-9F2F-9151-918E-43590C1E678C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAF82A3D-0199-9C10-95E7-8EAD8488A21A" name="CTENGATE_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:16:35 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61484F6D-2F8F-849B-A982-B1256F33E416"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9D038FE-881D-30FB-FB47-54A64B6F804F" name="CTENGATE_VEICULO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:37:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86F57B12-FFCE-8616-8AC7-7F061CB1EF9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="55FDD6BE-F8D2-BF24-D6C3-4B7D151ED4AD">
+<createdBy>Usuario</createdBy>
+<modifiedBy>Usuario</modifiedBy>
+<createdTime>2024-03-12 12:43:14 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="06B5AF34-6E5A-DC24-25DF-443BB0EB2B0D" otype="Entity" vid="6B731E55-87CF-AFC0-85F9-743BEA35C6DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="253" y="294" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="656BF603-6878-99F3-7BC3-8B5888A38062" otype="Entity" vid="9E3C4B9C-8A3B-1604-DDF3-08A71F9CE058">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="253" y="140" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="6E576AEB-D73E-F265-DDBE-736781C2AA46" otype="Entity" vid="DFCCB4B6-41FE-1CC6-276E-0050CBB1BB37">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="747" y="450" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="77B04185-038B-8686-3B91-D3F6C2FE26C9" otype="Entity" vid="CB78EF77-D4E3-914D-3D6E-F2AF30399C29">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="500" y="447" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="ADA4A6C9-B188-1BCE-6928-793A5C2F85BF" otype="Entity" vid="3C817129-7219-C800-3D34-84379E01F562">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="258" y="442" width="170" height="110"/>
+</OView>
+</objectViews>
+</Diagram>

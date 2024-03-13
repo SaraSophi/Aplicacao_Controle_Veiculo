@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA3CCB9C-5125-3394-9652-2901EFAFD0D1" name="UF">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:42:31 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cdUf" id="781D5017-9843-10C9-C1EB-F637112DB531">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:45:31 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmUf" id="81650EC7-2B31-BEB9-6EF9-988B644DF935">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:46:08 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dsSigla" id="3A85D05D-E5EF-58DA-5013-55734E818861">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:49:24 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="985EEE6E-952C-A631-FDBB-638634EA50B6" name="UF_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:45:31 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="781D5017-9843-10C9-C1EB-F637112DB531"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

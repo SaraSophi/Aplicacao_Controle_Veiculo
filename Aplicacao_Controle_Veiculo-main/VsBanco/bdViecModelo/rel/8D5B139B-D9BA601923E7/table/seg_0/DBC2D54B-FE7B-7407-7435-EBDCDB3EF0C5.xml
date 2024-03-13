@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBC2D54B-FE7B-7407-7435-EBDCDB3EF0C5" name="OPERADOR">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:03:10 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idOperador" id="5C723D5E-7A33-9BC1-BBC6-AFB4C166482E">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:03:28 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmOperador" id="F686F1DB-897D-F856-36BA-46E2C0D2CB8B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:03:51 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUNCIONARIO_nrMatricula" id="751F8CE7-AE03-E2A5-26DA-328FE845AEC8">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:37 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDAD0246-FE2F-8349-75F1-39CABC5C7A4F" referredColumn="63587E9B-F269-757F-A6BE-8CE56AB4B620"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6EF57160-6F19-51CC-B365-3659F8B8AD88" name="OPERADOR_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:03:28 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C723D5E-7A33-9BC1-BBC6-AFB4C166482E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72655D00-C569-651C-049A-40D24D6BA458" name="OPERADOR_FUNCIONARIO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:37 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="751F8CE7-AE03-E2A5-26DA-328FE845AEC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

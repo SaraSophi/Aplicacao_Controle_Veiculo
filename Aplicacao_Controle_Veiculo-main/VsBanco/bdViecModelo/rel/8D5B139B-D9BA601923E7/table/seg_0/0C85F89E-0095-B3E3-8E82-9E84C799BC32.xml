@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C85F89E-0095-B3E3-8E82-9E84C799BC32" name="TPVEICULO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:28:16 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idTpVeiculo" id="28196105-8C73-BA3C-8D50-3C291527E569">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:29:37 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dsTpVeiculo" id="11D51698-EE98-CAB2-51E5-12E21B717DA7">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:32:48 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="323F33C1-A375-EFD7-CCFD-9022FE22F670" name="TPVEICULO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:29:37 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28196105-8C73-BA3C-8D50-3C291527E569"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

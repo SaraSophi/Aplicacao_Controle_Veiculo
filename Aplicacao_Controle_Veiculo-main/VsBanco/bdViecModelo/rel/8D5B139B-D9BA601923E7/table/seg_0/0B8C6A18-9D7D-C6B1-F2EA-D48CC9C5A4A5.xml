@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B8C6A18-9D7D-C6B1-F2EA-D48CC9C5A4A5" name="MUNICIPIO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:49:36 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cdMunicipio" id="CF925270-6C5B-7516-3192-C5EDC350450C">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:50:46 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmMunicipio" id="F900DE79-F379-3516-33A2-57C2D2F3DE28">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:51:18 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF_cdUf" id="E86AEFA3-6636-7A68-4DDC-23643ED34DF3">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:35:13 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07703A9F-3EEB-68AE-0211-601D24DBF8AE" referredColumn="781D5017-9843-10C9-C1EB-F637112DB531"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2573E041-39DD-BC9E-5E68-0D89D8337112" name="MUNICIPIO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:50:46 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF925270-6C5B-7516-3192-C5EDC350450C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8698F3C6-8C74-A68E-FAFC-5C3FAC00A9C2" name="MUNICIPIO_UF_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:35:13 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E86AEFA3-6636-7A68-4DDC-23643ED34DF3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

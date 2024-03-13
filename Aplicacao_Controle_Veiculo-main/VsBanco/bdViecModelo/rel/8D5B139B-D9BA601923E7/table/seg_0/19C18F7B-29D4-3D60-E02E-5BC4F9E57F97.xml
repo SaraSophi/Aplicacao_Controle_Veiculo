@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19C18F7B-29D4-3D60-E02E-5BC4F9E57F97" name="ENDERECO">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:52:00 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEndereco" id="3AA31FB2-E529-D127-43DB-9585473BA42B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:52:44 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dsLogradouro" id="CB86B596-3DDC-9849-9077-D1EA0F2FDE35">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:53:21 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrCasa" id="CE8BB47E-E562-7667-6A45-EBC1C94B17FC">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:53:40 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmBairro" id="C4649F23-7E1E-1557-1EB9-0B08BDDE034F">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:54:06 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nrCep" id="7BE02399-4E88-D55D-1318-40C57AFBC0E9">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:54:36 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO_cdMunicipio" id="1AAF1C69-9AC5-FB7D-9EEB-C88729DA1F78">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:35:33 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B943417-27E6-6EC5-E74E-FBBBF9583A31" referredColumn="CF925270-6C5B-7516-3192-C5EDC350450C"/>
+</associations>
+</Column>
+<Column name="PESSOA_idPessoa" id="5FBFF273-92BF-D37B-6AF4-0442DE66BB0B">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:05 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="795C62CA-32F8-A55F-1623-492A0AEE608C" referredColumn="5899D008-4039-DF00-1E8F-132F6AE77CEE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="39A74F3B-3D9F-5F6B-83AA-530637936520" name="ENDERECO_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 11:52:44 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AA31FB2-E529-D127-43DB-9585473BA42B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2DD77BC1-AFED-5BED-D6D8-B4C0CE1D8CCC" name="ENDERECO_MUNICIPIO_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:35:33 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AAF1C69-9AC5-FB7D-9EEB-C88729DA1F78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41CEE338-482C-6099-676E-2540A584E5CD" name="ENDERECO_PESSOA_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2024-03-12 12:36:05 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FBFF273-92BF-D37B-6AF4-0442DE66BB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
