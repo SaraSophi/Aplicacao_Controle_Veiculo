@@ -40,7 +40,7 @@
 <dataTypeSize>200</dataTypeSize>
 <ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nrCaso" id="B576A02C-549E-3191-AED2-5530419AABD9">
+<Attribute name="nrCasa" id="B576A02C-549E-3191-AED2-5530419AABD9">
 <createdBy>Usuario</createdBy>
 <createdTime>2024-03-12 13:52:35 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
@@ -77,6 +77,48 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
 <ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cdMunicipio" id="0BC605C3-2DB9-6054-81D7-848D0240F9BC">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:21:35 UTC</createdTime>
+<generatorID>EED17577-7457-B5F2-B9E8-DC327A3B6259</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>6828176A-6D1B-5430-3BE2-3E00EFD77BD6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cdUf" id="C99552B9-7CF6-5CEF-C417-E36DE0645F25">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:21:35 UTC</createdTime>
+<generatorID>EED17577-7457-B5F2-B9E8-DC327A3B6259</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>7BB016B0-8BF5-101D-B72F-29AC56A349B0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPessoa" id="8D1F01E3-DC63-9754-505D-40394595DF5A">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:21:43 UTC</createdTime>
+<generatorID>E1215A61-B4B2-2061-AE97-541C0CFD2030</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>8382AEAF-7432-28C2-B149-9222466A6BB3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

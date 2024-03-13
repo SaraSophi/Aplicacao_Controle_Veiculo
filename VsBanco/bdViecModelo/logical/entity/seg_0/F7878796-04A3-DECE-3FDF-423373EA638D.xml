@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F7878796-04A3-DECE-3FDF-423373EA638D" name="VEICULO">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:04:57 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idVeiculo" id="5706153C-D764-CB60-4203-056135042652">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:05:07 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrPlaca" id="6209DAEC-1109-2B42-3EEA-9F9A88851736">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:05:25 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dsModelo" id="66106B57-158C-30EE-BD1C-99D6A5B89CAA">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:06:02 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tpTracao" id="E2B577B1-AE46-30F7-6666-82B6CE65678F">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:06:29 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrRenavam" id="1EB54FCB-48A8-5FD8-7E11-6A02196E8A84">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:07:21 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dtAquisicao" id="98B66114-6DF9-F753-CA4C-9F0EE30ABD46">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:08:55 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrFrota" id="080942D6-82FC-3182-D308-24CC4A992196">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:09:31 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrConjunto" id="B6A8BAB6-AD7A-02CA-B58E-B9EA161C2E70">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:09:55 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nrChassi" id="2AE8E178-3FDE-CC05-FBC8-C0BAE312AA71">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:10:22 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tpCombustivel" id="2C3C2044-0455-6D71-AA60-C62081F37DD7">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:11:53 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="anoVeic" id="346A2352-C74D-3E10-4AEA-72FB94FBA7B0">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:12:29 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dsMarca" id="FB30B220-A97F-5343-FEF3-34038E1452B1">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:12:51 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qtEixo" id="BA32B210-F627-F7B4-E1FA-282B5ED90ED4">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:13:14 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idVeiculo1" id="2FA50A38-B92F-D28C-2384-D9974A74B3F3">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:23:51 UTC</createdTime>
+<generatorID>36DD6232-A2D9-3B7B-D6EA-7C61C7AE49EC</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5706153C-D764-CB60-4203-056135042652</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C5A8385-B196-D318-DC4A-AA894152EC6A" name="VEICULO PK">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:05:22 UTC</createdTime>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5706153C-D764-CB60-4203-056135042652</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

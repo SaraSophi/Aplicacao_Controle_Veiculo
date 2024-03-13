@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E576AEB-D73E-F265-DDBE-736781C2AA46" name="FUNCIONARIO">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:11 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8984344F-71B8-AB01-42C9-9D1ED125912D" name="CTENGATE">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:13:50 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="nrMatricula" id="937AAD4B-AD1D-024F-5A4A-92E2B60E5114">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:23 UTC</createdTime>
+<Attribute name="id" id="50A44A0B-94B9-5A43-9B1F-91A9EED843D7">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:14:01 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -27,35 +27,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nmFuncionario" id="3FA94F65-825F-CA37-95F8-01DAC8A99A7E">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:36 UTC</createdTime>
-<ownerDesignName>bdViecModelo</ownerDesignName>
-<engineerTo>
-<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="dsFuncao" id="6B9D1CCA-F08E-41E0-7D68-C38754B7CECA">
+<Attribute name="dtEngate" id="CB877715-F1C8-2E18-D53E-E8DE8C78C556">
 <createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 22:56:06 UTC</createdTime>
-<ownerDesignName>bdViecModelo</ownerDesignName>
-<engineerTo>
-<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="dtAdmissao" id="691A2D67-893C-44A6-F761-E4165766442B">
-<createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 22:56:37 UTC</createdTime>
+<createdTime>2024-03-12 23:14:27 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -65,15 +39,28 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idPessoa" id="D4592F0E-5A6E-026D-050C-CD4510CD6A09">
+<Attribute name="dtDesengate" id="54AF4D15-9B5A-E22C-FFA6-3FCE77C4BE1D">
 <createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 23:22:44 UTC</createdTime>
-<generatorID>F4750B0E-A977-E3C7-A797-75AFBF8B4BCF</generatorID>
+<createdTime>2024-03-12 23:14:57 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
-<referedAttribute>8382AEAF-7432-28C2-B149-9222466A6BB3</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idVeiculo" id="932D3E26-389D-813A-9990-3AD0157ACAED">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:23:41 UTC</createdTime>
+<generatorID>8470110D-CDEC-3B97-777F-8355C6214A85</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>5706153C-D764-CB60-4203-056135042652</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -81,16 +68,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2F4D1E7F-C1F7-ACB8-2A8C-ACE29FFADBD5" name="FUNCIONARIO PK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:34 UTC</createdTime>
+<identifier id="ECC83A8E-5522-F40C-E5C5-09906C6DCACD" name="CTENGATE PK">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:14:24 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>937AAD4B-AD1D-024F-5A4A-92E2B60E5114</attributeRef>
+<attributeRef>50A44A0B-94B9-5A43-9B1F-91A9EED843D7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
