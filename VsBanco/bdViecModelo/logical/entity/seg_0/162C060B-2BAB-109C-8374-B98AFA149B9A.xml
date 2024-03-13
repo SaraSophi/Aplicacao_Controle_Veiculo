@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E576AEB-D73E-F265-DDBE-736781C2AA46" name="FUNCIONARIO">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:11 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="162C060B-2BAB-109C-8374-B98AFA149B9A" name="CTVINCULO">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:01:03 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="nrMatricula" id="937AAD4B-AD1D-024F-5A4A-92E2B60E5114">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:23 UTC</createdTime>
+<Attribute name="id" id="7458DC4E-D8C5-BC9C-5A1A-ED401BDBF5ED">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:01:15 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -27,35 +27,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nmFuncionario" id="3FA94F65-825F-CA37-95F8-01DAC8A99A7E">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:36 UTC</createdTime>
-<ownerDesignName>bdViecModelo</ownerDesignName>
-<engineerTo>
-<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="dsFuncao" id="6B9D1CCA-F08E-41E0-7D68-C38754B7CECA">
+<Attribute name="dtVinculo" id="0E234915-4B16-B17E-E947-E28589415F11">
 <createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 22:56:06 UTC</createdTime>
-<ownerDesignName>bdViecModelo</ownerDesignName>
-<engineerTo>
-<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="dtAdmissao" id="691A2D67-893C-44A6-F761-E4165766442B">
-<createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 22:56:37 UTC</createdTime>
+<createdTime>2024-03-12 23:01:35 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -65,15 +39,42 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idPessoa" id="D4592F0E-5A6E-026D-050C-CD4510CD6A09">
+<Attribute name="dtDesVinculo" id="A4DC7F59-988D-DDFE-284F-64C425E667F6">
 <createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 23:22:44 UTC</createdTime>
-<generatorID>F4750B0E-A977-E3C7-A797-75AFBF8B4BCF</generatorID>
+<createdTime>2024-03-12 23:03:35 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
-<referedAttribute>8382AEAF-7432-28C2-B149-9222466A6BB3</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idMotorista" id="C766E27A-3C67-4B45-41FB-B914720294F7">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:23:19 UTC</createdTime>
+<generatorID>1C5FF91E-B009-9143-AB12-853C86609A16</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>EB6CF810-943F-F0DC-0DCB-2DC77E0C7C10</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idVeiculo" id="1B65A50B-EB22-CF24-BDA5-937435EA90E4">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:23:31 UTC</createdTime>
+<generatorID>290CED1A-E269-F059-9611-6694FADA6327</generatorID>
+<ownerDesignName>bdViecModelo</ownerDesignName>
+<engineerTo>
+<item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
+</engineerTo>
+<referedAttribute>5706153C-D764-CB60-4203-056135042652</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -81,16 +82,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2F4D1E7F-C1F7-ACB8-2A8C-ACE29FFADBD5" name="FUNCIONARIO PK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:55:34 UTC</createdTime>
+<identifier id="56AAD975-15D5-197F-9201-44145D61933C" name="CTVINCULO PK">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:01:31 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>937AAD4B-AD1D-024F-5A4A-92E2B60E5114</attributeRef>
+<attributeRef>7458DC4E-D8C5-BC9C-5A1A-ED401BDBF5ED</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

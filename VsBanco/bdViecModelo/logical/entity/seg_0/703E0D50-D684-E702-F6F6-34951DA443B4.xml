@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="06B5AF34-6E5A-DC24-25DF-443BB0EB2B0D" name="MUNICIPIO">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:51:03 UTC</createdTime>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="703E0D50-D684-E702-F6F6-34951DA443B4" name="MOTORISTA">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 22:59:41 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="cdMunicipio" id="6828176A-6D1B-5430-3BE2-3E00EFD77BD6">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:51:14 UTC</createdTime>
+<Attribute name="idMotorista" id="EB6CF810-943F-F0DC-0DCB-2DC77E0C7C10">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 22:59:55 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nmMunicipio" id="3D35920D-02A0-BE86-6422-EF20275EC165">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:51:31 UTC</createdTime>
+<Attribute name="nmMotorista" id="2CC9BAF3-3E3F-B73C-DC33-2C544E724635">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:00:17 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
@@ -40,15 +40,15 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cdUf" id="7BB016B0-8BF5-101D-B72F-29AC56A349B0">
+<Attribute name="nrMatricula" id="6C79EF42-196A-822C-6027-AD8AF2ED8D1F">
 <createdBy>kaiky_dneyfo2</createdBy>
-<createdTime>2024-03-12 23:21:12 UTC</createdTime>
-<generatorID>71224E9F-8F9D-0CF9-A814-57A45522A312</generatorID>
+<createdTime>2024-03-12 23:22:57 UTC</createdTime>
+<generatorID>E988E6E0-B7F8-40BD-F440-25578A0E999C</generatorID>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
-<referedAttribute>A8076DF5-BB87-C2CD-B170-1328BABC40AF</referedAttribute>
+<referedAttribute>937AAD4B-AD1D-024F-5A4A-92E2B60E5114</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -56,17 +56,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8BC9EAFD-5621-235D-C6C9-09E76508B860" name="MUNICIPIO PK">
-<createdBy>Usuario</createdBy>
-<createdTime>2024-03-12 13:51:29 UTC</createdTime>
+<identifier id="AF267DD3-89F7-5C8B-E638-36D70E4CB9D0" name="MOTORISTA PK">
+<createdBy>kaiky_dneyfo2</createdBy>
+<createdTime>2024-03-12 23:00:12 UTC</createdTime>
 <ownerDesignName>bdViecModelo</ownerDesignName>
 <engineerTo>
 <item key="8D5B139B-C4D2-8C89-BAED-D9BA601923E7" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6828176A-6D1B-5430-3BE2-3E00EFD77BD6</attributeRef>
-<attributeRef>7BB016B0-8BF5-101D-B72F-29AC56A349B0</attributeRef>
+<attributeRef>EB6CF810-943F-F0DC-0DCB-2DC77E0C7C10</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
